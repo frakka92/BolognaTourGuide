@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">BolognaTourGuide</string>
+
+    <string name="attraction_content_description">Attraction</string>
+    <string name="title">Title</string>
+    <string name="address">Address</string>
+
+    <string name="tamburini_title">Tamburini</string>
+    <string name="tamburini_address">Via Caprarie, 1</string>
+
+    <string name="fourghetti_title">Fourghetti</string>
+    <string name="fourghetti_address">Via Augusto Murri, 71</string>
+
+    <string name="laverace_title">Pizzeria La Verace</string>
+    <string name="laverace_address">Via Cairoli, 16</string>
+
+    <string name="villachigi_title">Parco di Villa Ghigi</string>
+    <string name="villachigi_address">Via San Mamolo 105</string>
+
+    <string name="viagiardini_title">Parco di Via dei Giardini (della Ca\' Bura)</string>
+    <string name="viagiardini_address">Via dei Giardini</string>
+
+    <string name="giardinimargherita_title">Giardini Margherita</string>
+    <string name="giardinimargherita_address">Piazza di Porta Santo Stefano</string>
+
+    <string name="sanpetronio_title">Basilica di San Petronio</string>
+    <string name="sanpetronio_address">Piazza Galvani, 5</string>
+
+    <string name="nettuno_title">Statua del Nettuno</string>
+    <string name="nettuno_address">Piazza del Nettuno</string>
+
+    <string name="torri_title">Torri degli Asinelli-Garisenda</string>
+    <string name="torri_address">Piazza di Porta Ravegnana</string>
+</resources>

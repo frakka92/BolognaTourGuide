@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/attraction_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_attraction_layout">
+
+    <ImageView
+        android:id="@+id/attraction_pic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/attraction_pic_height"
+        android:contentDescription="@string/attraction_content_description"
+        android:scaleType="centerInside"
+        tools:srcCompat="@tools:sample/backgrounds/scenic[1]" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/attraction_pic"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/attraction_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/padding_start_title"
+            android:paddingLeft="@dimen/padding_left_title"
+            android:paddingEnd="@dimen/padding_end_title"
+            android:paddingRight="@dimen/padding_right_title"
+            android:text="@string/title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/attraction_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/padding_start_address"
+            android:paddingLeft="@dimen/padding_left_address"
+            android:paddingEnd="@dimen/padding_end_address"
+            android:paddingRight="@dimen/padding_right_address"
+            android:text="@string/address"
+            android:textColor="@color/black"
+            android:textSize="@dimen/address_size" />
+
+    </LinearLayout>
+</RelativeLayout>
