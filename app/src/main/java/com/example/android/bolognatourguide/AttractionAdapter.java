@@ -51,6 +51,7 @@ public class AttractionAdapter extends ArrayAdapter<Attraction> {
             holder.titleViewHolder = listView.findViewById(R.id.attraction_title);
             holder.addressViewHolder = listView.findViewById(R.id.attraction_address);
             holder.picViewHolder = listView.findViewById(R.id.attraction_pic);
+
             listView.setTag(holder);
         }
 

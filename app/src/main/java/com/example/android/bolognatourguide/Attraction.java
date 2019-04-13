@@ -7,16 +7,18 @@ public class Attraction {
     private String mTitle;
     private String mAddress;
     private int mPictureID;
+    private String mDescription;
 
     /**
      * @param mTitle     the title of the attraction
      * @param mAddress   the address of the attraction
      * @param mPictureID a picture of the attraction
      */
-    public Attraction(String mTitle, String mAddress, int mPictureID) {
+    public Attraction(String mTitle, String mAddress, int mPictureID, String mDescription) {
         setmTitle(mTitle);
         setmAddress(mAddress);
         setmPictureID(mPictureID);
+        setmDescription(mDescription);
     }
 
     public String getmTitle() {
@@ -43,12 +45,21 @@ public class Attraction {
         this.mPictureID = mPictureID;
     }
 
+    public String getmDescription() {
+        return mDescription;
+    }
+
+    public void setmDescription(String mDescription) {
+        this.mDescription = mDescription;
+    }
+
     @Override
     public String toString() {
         return "Attraction{" +
                 "mTitle='" + mTitle + '\'' +
                 ", mAddress='" + mAddress + '\'' +
-                ", mPhotoID=" + mPictureID +
+                ", mPictureID=" + mPictureID +
+                ", mDescription='" + mDescription + '\'' +
                 '}';
     }
 }

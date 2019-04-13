@@ -7,28 +7,49 @@
 
     <string name="tamburini_title">Tamburini</string>
     <string name="tamburini_address">Via Caprarie, 1</string>
+    <string name="tamburini_desc">The Tamburini Shop offers a wide selection of typical regional and Italian meats and cheeses, Restaurant,
+        Self-service restaurants and more!</string>
 
     <string name="fourghetti_title">Fourghetti</string>
     <string name="fourghetti_address">Via Augusto Murri, 71</string>
+    <string name="fourghetti_desc">The restaurant of the famous Chef Bruno Barbieri, 7 michelin stars</string>
 
     <string name="laverace_title">Pizzeria La Verace</string>
     <string name="laverace_address">Via Cairoli, 16</string>
+    <string name="laverace_desc">Neapolitan pizza and Mediterranean dishes among rough white walls with exposed stone
+        and suggestive cave room.</string>
 
-    <string name="villachigi_title">Parco di Villa Ghigi</string>
-    <string name="villachigi_address">Via San Mamolo 105</string>
+    <string name="villaghigi_title">Parco di Villa Ghigi</string>
+    <string name="villaghigi_address">Via San Mamolo 105</string>
+    <string name="villaghigi_desc">Villa Ghigi is a public park in Bologna, located close to the urban area. Part of the park is used for agricultural
+        land and, recently, for grazing.</string>
 
     <string name="viagiardini_title">Parco di Via dei Giardini (della Ca\' Bura)</string>
     <string name="viagiardini_address">Via dei Giardini</string>
+    <string name="viagiardini_desc">It extends over 9 hectares around a central axis that connects a square between two large artificial hills
+         paved with a gazebo that juts out over a large stretch of water. The pond is the heart of the park and recalls the era in which around the Navile
+         clay kilns and quarries flourished.</string>
 
     <string name="giardinimargherita_title">Giardini Margherita</string>
     <string name="giardinimargherita_address">Piazza di Porta Santo Stefano</string>
+    <string name="giardinimargherita_desc">It is the largest and most popular city park. Designed by Sambuy from Piedmont, to provide Bologna with a
+        large public green space based on the example of the major Italian and European cities, it was inaugurated in 1879 with the name of Passeggio
+        Regina Margherita (as a tribute to the wife of Umberto I).</string>
 
     <string name="sanpetronio_title">Basilica di San Petronio</string>
     <string name="sanpetronio_address">Piazza Galvani, 5</string>
+    <string name="sanpetronio_desc">The Basilica of San Petronio is the main church of Bologna: it dominates the Piazza Maggiore and, although it is
+        largely unfinished, it is one of the largest churches in Europe. Its imposing size makes it the fourth largest church in Italy.</string>
 
     <string name="nettuno_title">Statua del Nettuno</string>
     <string name="nettuno_address">Piazza del Nettuno</string>
+    <string name="nettuno_desc">The Neptune fountain, nicknamed al Żigànt (Gigante in Italian: Giant in English) in the Bolognese dialect due to the
+        size of the statue of Neptune, is located in Bologna in piazza del Nettuno.</string>
 
     <string name="torri_title">Torri degli Asinelli-Garisenda</string>
     <string name="torri_address">Piazza di Porta Ravegnana</string>
+    <string name="torri_desc">The Garisenda and Asinelli tower are the so-called two towers of Bologna, symbol of the city, located at the intersection
+        of the ancient streets San Donato (now via Zamboni), San Vitale, Maggiore, Santo Stefano and Castiglione.</string>
+
+    <string name="attraction_detail_description">Description</string>
 </resources>
