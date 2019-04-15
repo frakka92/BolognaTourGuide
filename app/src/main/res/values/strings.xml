@@ -51,5 +51,23 @@
     <string name="torri_desc">The Garisenda and Asinelli tower are the so-called two towers of Bologna, symbol of the city, located at the intersection
         of the ancient streets San Donato (now via Zamboni), San Vitale, Maggiore, Santo Stefano and Castiglione.</string>
 
+    <string name="museo_civico_title">Museo Civico Archeologico</string>
+    <string name="museo_civico_address">Via dell\'Archiginnasio 2</string>
+    <string name="museo_civico_desc">The museum is one of the most important Italian archaeological collections and is highly representative of
+        local history, from prehistory to the Roman age. His collection of Egyptian antiquities is one of the most important in Europe.
+        Between 1972 and 2012 the Museum hosted over 150 exhibitions and exhibitions of an archaeological and artistic nature.</string>
+
+    <string name="museo_resistenza_title">Museo della Resistenza di Bologna</string>
+    <string name="museo_resistenza_address">Via Sant\'Isaia 20</string>
+    <string name="museo_resistenza_desc">The Museum of the Resistance of Bologna is located in the convent complex of San Mattia and collects
+        different types of material (archive documents, photographs, posters, multimedia products) related to the history of anti-fascism,
+        the Bolognese Resistance and republican Italy.</string>
+
+    <string name="museo_storia_title">Museo della Storia di Bologna</string>
+    <string name="museo_storia_address">Via Castiglione 8</string>
+    <string name="museo_storia_desc">TPalazzo Pepoli, also known as the Museums of History of Bologna, is a historic building located in the
+        center of Bologna near the two towers, in Via Castiglione.</string>
+
     <string name="attraction_detail_description">Description</string>
+
 </resources>

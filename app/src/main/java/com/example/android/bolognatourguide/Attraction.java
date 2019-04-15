@@ -10,9 +10,10 @@ public class Attraction {
     private String mDescription;
 
     /**
-     * @param mTitle     the title of the attraction
-     * @param mAddress   the address of the attraction
-     * @param mPictureID a picture of the attraction
+     * @param mTitle       the title of the attraction
+     * @param mAddress     the address of the attraction
+     * @param mPictureID   a picture of the attraction
+     * @param mDescription the description of the attraction
      */
     public Attraction(String mTitle, String mAddress, int mPictureID, String mDescription) {
         setmTitle(mTitle);

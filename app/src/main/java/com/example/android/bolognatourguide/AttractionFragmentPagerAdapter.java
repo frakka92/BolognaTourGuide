@@ -7,8 +7,8 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class AttractionFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    public static final int ATTRACTION_CATEGORY_NUMBER = 3;
-    public static String[] ATTRACTION_CATEGORY_TITLE = {"Restaurants", "Parks", "Curiosity"};
+    public static final int ATTRACTION_CATEGORY_NUMBER = 4;
+    public static String[] ATTRACTION_CATEGORY_TITLE = {"Restaurants", "Parks", "Cultures", "Museums"};
 
     public AttractionFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -20,8 +20,10 @@ public class AttractionFragmentPagerAdapter extends FragmentPagerAdapter {
             return new RestaurantsFragment();
         } else if (position == 1) {
             return new ParksFragment();
+        } else if (position == 2) {
+            return new CulturesFragment();
         } else {
-            return new CuriosityFragment();
+            return new MuseumsFragment();
         }
     }
 
