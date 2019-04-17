@@ -1,9 +1,12 @@
 package com.example.android.bolognatourguide;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 /**
  * This class represents the thing to see/do in Bologna
  */
-public class Attraction {
+public class Attraction implements Parcelable {
     private String mTitle;
     private String mAddress;
     private int mPictureID;
@@ -62,5 +65,41 @@ public class Attraction {
                 ", mPictureID=" + mPictureID +
                 ", mDescription='" + mDescription + '\'' +
                 '}';
+    }
+
+    // In constructor you will read the variables from Parcel. Make sure to read them in the same sequence in which you have written them in Parcel.
+    public Attraction(Parcel in) {
+
+        mTitle = in.readString();
+        mAddress = in.readString();
+        mPictureID = in.readInt();
+        mDescription = in.readString();
+    }
+
+    // This is to de-serialize the object
+    public static final Creator<Attraction> CREATOR = new Creator<Attraction>() {
+        @Override
+        public Attraction createFromParcel(Parcel in) {
+            return new Attraction(in);
+        }
+
+        @Override
+        public Attraction[] newArray(int size) {
+            return new Attraction[size];
+        }
+    };
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    // This is where you will write your member variables in Parcel. Here you can write in any order. It is not necessary to write all members in Parcel.
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(mTitle);
+        dest.writeString(mAddress);
+        dest.writeInt(mPictureID);
+        dest.writeString(mDescription);
     }
 }

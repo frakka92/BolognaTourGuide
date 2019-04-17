@@ -27,10 +27,10 @@
             android:paddingLeft="@dimen/padding_left_title"
             android:paddingEnd="@dimen/padding_end_title"
             android:paddingRight="@dimen/padding_right_title"
-            android:text="@string/title"
             android:textColor="@color/black"
             android:textSize="@dimen/title_size"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:text="@string/title" />
 
         <TextView
             android:id="@+id/attraction_address"
@@ -40,9 +40,9 @@
             android:paddingLeft="@dimen/padding_left_address"
             android:paddingEnd="@dimen/padding_end_address"
             android:paddingRight="@dimen/padding_right_address"
-            android:text="@string/address"
             android:textColor="@color/black"
-            android:textSize="@dimen/address_size" />
+            android:textSize="@dimen/address_size"
+            tools:text="@string/address" />
 
     </LinearLayout>
 </RelativeLayout>

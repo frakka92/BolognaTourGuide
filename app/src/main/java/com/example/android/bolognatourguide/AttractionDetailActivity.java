@@ -17,23 +17,20 @@ public class AttractionDetailActivity extends AppCompatActivity {
 
         //I get the attraction info if exists otherwise it will throw a NullPointerException and the app will crash
         if (getIntent().getExtras() != null) {
-            String title = getIntent().getExtras().getString(INTENT_KEY_NAME_TITLE);
-            String address = getIntent().getExtras().getString(INTENT_KEY_NAME_ADDRESS);
-            int picture = getIntent().getExtras().getInt(INTENT_KEY_NAME_PICID);
-            String description = getIntent().getExtras().getString(INTENT_KEY_NAME_DESCRIPTION);
+            Attraction attraction = getIntent().getParcelableExtra(INTENT_KEY_NAME_PARCELABLE);
 
             ActionBar ab = getSupportActionBar();
-            ab.setTitle(title);
+            ab.setTitle(attraction.getmTitle());
 
             TextView titleTextView = findViewById(R.id.attraction_details_title);
             TextView addressTextView = findViewById(R.id.attraction_details_address);
             ImageView picImageView = findViewById(R.id.attraction_details_pic);
             TextView descriptionTextView = findViewById(R.id.attraction_details_description);
 
-            titleTextView.setText(title);
-            addressTextView.setText(address);
-            picImageView.setImageResource(picture);
-            descriptionTextView.setText(description);
+            titleTextView.setText(attraction.getmTitle());
+            addressTextView.setText(attraction.getmAddress());
+            picImageView.setImageResource(attraction.getmPictureID());
+            descriptionTextView.setText(attraction.getmDescription());
         }
     }
 }

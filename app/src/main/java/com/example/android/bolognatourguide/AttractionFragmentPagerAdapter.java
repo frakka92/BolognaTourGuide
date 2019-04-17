@@ -1,5 +1,6 @@
 package com.example.android.bolognatourguide;
 
+import android.content.Context;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -8,22 +9,26 @@ import android.support.v4.app.FragmentPagerAdapter;
 public class AttractionFragmentPagerAdapter extends FragmentPagerAdapter {
 
     public static final int ATTRACTION_CATEGORY_NUMBER = 4;
-    public static String[] ATTRACTION_CATEGORY_TITLE = {"Restaurants", "Parks", "Cultures", "Museums"};
+    public Context context;
 
-    public AttractionFragmentPagerAdapter(FragmentManager fm) {
+    public AttractionFragmentPagerAdapter(FragmentManager fm, Context mContext) {
         super(fm);
+        context = mContext;
     }
 
     @Override
     public Fragment getItem(int position) {
-        if (position == 0) {
-            return new RestaurantsFragment();
-        } else if (position == 1) {
-            return new ParksFragment();
-        } else if (position == 2) {
-            return new CulturesFragment();
-        } else {
-            return new MuseumsFragment();
+        switch (position) {
+            case 0:
+                return new RestaurantsFragment();
+            case 1:
+                return new ParksFragment();
+            case 2:
+                return new CulturesFragment();
+            case 3:
+                return new MuseumsFragment();
+            default:
+                return null;
         }
     }
 
@@ -35,6 +40,17 @@ public class AttractionFragmentPagerAdapter extends FragmentPagerAdapter {
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        return ATTRACTION_CATEGORY_TITLE[position];
+        switch (position) {
+            case 0:
+                return context.getString(R.string.category_restaurants);
+            case 1:
+                return context.getString(R.string.category_parks);
+            case 2:
+                return context.getString(R.string.category_cultures);
+            case 3:
+                return context.getString(R.string.category_museums);
+            default:
+                return null;
+        }
     }
 }

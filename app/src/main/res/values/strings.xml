@@ -69,5 +69,9 @@
         center of Bologna near the two towers, in Via Castiglione.</string>
 
     <string name="attraction_detail_description">Description</string>
+    <string name="category_restaurants">Restaurants</string>
+    <string name="category_parks">Parks</string>
+    <string name="category_cultures">Cultures</string>
+    <string name="category_museums">Museums</string>
 
 </resources>

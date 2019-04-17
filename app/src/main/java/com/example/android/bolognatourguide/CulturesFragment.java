@@ -44,14 +44,9 @@ public class CulturesFragment extends Fragment {
                 Intent attractionIntent = new Intent(getContext(), AttractionDetailActivity.class);
                 Attraction attraction = (Attraction) listView.getItemAtPosition(position);
 
-                //I want to display the details of the attraction so I need to pass the info as Extras
-                Bundle b = new Bundle();
-                b.putString(INTENT_KEY_NAME_TITLE, attraction.getmTitle());
-                b.putString(INTENT_KEY_NAME_ADDRESS, attraction.getmAddress());
-                b.putInt(INTENT_KEY_NAME_PICID, attraction.getmPictureID());
-                b.putString(INTENT_KEY_NAME_DESCRIPTION, attraction.getmDescription());
+                //I want to display the details of the attraction so I need to pass the info as Extra (Parcelable -> see class Attraction )
+                attractionIntent.putExtra(INTENT_KEY_NAME_PARCELABLE, attraction);
 
-                attractionIntent.putExtras(b);
                 startActivity(attractionIntent);
             }
         });
